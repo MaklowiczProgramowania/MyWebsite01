@@ -1,31 +1,30 @@
 body {
     font-family: 'PT Serif', serif;
-    background-image: url("../img/tlo3.png");
+    background: rgb(57,62,70);
+    background: radial-gradient(circle, rgba(57,62,70,1) 0%, rgba(34,40,49,1) 100%);
     margin: 0px;
     padding: 0px;
     width: 100%;
     height: 100%;
+    color: #eeeeee;
 }
 
 header {
     width:100%;
-    height: 300px;
     display:block;
     float:left;
+    margin-bottom: 50px;
 }
 
 #logo {
-    font-family: 'PT Serif', serif;
-    font-family: 'Unbounded', cursive;
-    letter-spacing: 5px;
+    font-family: 'Nanum Brush Script', cursive;
+    letter-spacing: 2px;
     text-align: center;
     width: 350px;
     display: block;
     float: left;
-    margin: 100px 0px 0px 100px;
-    background-image:url("../img/tlo2.png");
-    border:2px solid black;
-    color: black;
+    margin-left: 100px;
+    font-size: 25px;
 }
 
 #logo img{
@@ -37,8 +36,9 @@ header {
     width: 548.5px;
     display: block;
     float: right;
-    margin:50px 200px 0px 100px;
-    font-size:25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size:20px;
 }
 
 #menu ul {
@@ -54,7 +54,7 @@ header {
 
 #menu li a {
     display: inline-block;
-    color: black;
+    color: white;
     text-align: center;
     padding: 16px;
     text-decoration: none;
@@ -67,20 +67,31 @@ header {
 }
 
 #menu li a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: black;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+     content: '';
+     position: absolute;
+     width: 100%;
+     transform: scaleX(0);
+     height: 2px;
+     bottom: 0;
+     left: 0;
+     background-color: white;
+     transform-origin: bottom right;
+     transition: transform 0.25s ease-out;
 }
 
 article{
     text-align: center;
+    width: 80%;
+    margin: 15px 10% 15px 10%;
+}
+
+section{
+    float:left;
+    display:flex;
+}
+
+.fa-handshake-simple {
+    font-size: 100px;
 }
 
 footer{
