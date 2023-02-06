@@ -84,22 +84,43 @@ h1, h2, h3, h4, h5, h6{
      transition: transform 0.25s ease-out;
 }
 
-article{
-    text-align: center;
+article {
     width: 80%;
-    margin: 100px 10% 15px 10%;
+    margin: 15px 10% 15px 10%;
+    display: block;
+    float: left;
+    position: relative;
 }
 
-#Welcoming-text{
-    padding: 10px;
-    display:block;
-    float:left;
+#Start {
+    margin-top: 100px;
+}
+
+#Start-Icon {
+    width: 20%;
+    display: block;
+    float: left;
+    position: relative;
 }
 
 .fa-handshake-simple {
-    font-size: 100px;
+    font-size: 85px;
 }
 
-footer{
-    text-align: center;
+#Start-Text {
+    width: 80%;
+    display: block;
+    float: left;
+    position: relative;
+    font-size: 35px;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 85%;
+    padding-left: 15%;
+    background: rgb(57,62,70);
+    background: radial-gradient(circle, rgba(57,62,70,1) 20%, rgba(34,40,49,1) 56%);
 }
