@@ -98,13 +98,17 @@ article {
 
 #Start-Icon {
     width: 20%;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     float: left;
     position: relative;
+    margin:0px;
+    padding:0px;
 }
 
 .fa-handshake-simple {
-    font-size: 85px;
+    font-size: 100px;
 }
 
 #Start-Text {
