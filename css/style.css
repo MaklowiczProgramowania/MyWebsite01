@@ -18,14 +18,13 @@ header {
 }
 
 #logo {
-    font-family: 'Nanum Brush Script', cursive;
+    text-shadow: 1px 1px #808080;
     letter-spacing: 2px;
-    text-align: center;
-    width: 350px;
+    font-size: 12px;
+    width: 500px;
     display: block;
     float: left;
     margin-left: 100px;
-    font-size: 25px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -59,6 +58,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     padding: 16px;
     text-decoration: none;
+    font-weight: bold;
     position: relative;
 }
 
@@ -93,7 +93,7 @@ article {
     color: #202020;
 }
 
-#Start-Icon {
+#Start-Icons {
     width: 20%;
     display: flex;
     justify-content: center;
@@ -101,11 +101,13 @@ article {
     float: left;
     position: relative;
     margin: 0px;
-    padding: 0px;
+    padding-top: 20px;
+    color: #f68c41;
 }
 
-.fa-handshake-simple {
+.fa-face-smile-beam, .fa-handshake-simple {
     font-size: 100px;
+    padding:10px;
 }
 
 #Start-Text {
@@ -114,12 +116,21 @@ article {
     float: left;
     position: relative;
     font-size: 35px;
+    text-shadow: 1px 1px #808080;
 }
 
+#About-Text {
+    line-height: 1.5;
+    font-size: 20px;
+    margin-top: 15px;
+    padding-left: 20px;
+    width: 38%;
+}
 
 footer {
     position: absolute;
     bottom: 0px;
     width: 85%;
     padding-left: 15%;
+    background-color: #ffffff;
 }
