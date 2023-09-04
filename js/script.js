@@ -1,4 +1,9 @@
-function reveal_from_right() {
+const htmlDiv = document.getElementById("MS-HTML");
+const cssDiv = document.getElementById("MS-CSS");
+const jsDiv = document.getElementById("MS-JS");
+const gitDiv = document.getElementById("MS-GIT");
+
+const reveal_from_right = () => {
     var reveals = document.querySelectorAll(".reveal_from_right");
     
     for (var i = 0; i < reveals.length; i++) {
@@ -16,7 +21,7 @@ function reveal_from_right() {
     }
 }
 
-function reveal_from_left() {
+const reveal_from_left = () => {
     var reveals = document.querySelectorAll(".reveal_from_left");
     
     for (var i = 0; i < reveals.length; i++) {
@@ -36,3 +41,4 @@ function reveal_from_left() {
 
 window.addEventListener("scroll", reveal_from_right);
 window.addEventListener("scroll", reveal_from_left);
+

@@ -6,14 +6,13 @@ body {
     width: 100%;
     height: 100%;
     color: #000000;
-    background-image: url("../img/tlo2.png");
-    /*
+    background-image: url("../img/tlo.png");
+
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-        */
+        
 }
-/*
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -23,28 +22,15 @@ body {
         opacity: 1;
     }
 }
-    */
-
-header {
-    width: 100%;
-    height: 60px;
-    display: block;
-    position: absolute;
-    top: 0px;
-    float: left;
-    position: sticky;
-    z-index: 999;
-}
 
 #logo {
     text-shadow: 1px 1px #808080;
     letter-spacing: 2px;
-    font-size: 13px;
-    width: 225px;
-    display: block;
+    font-size: 20px;
     float: left;
     margin-left: 100px;
-    background-image: url("../img/tlo2.png");
+    margin-top: 10px;
+    background-image: url("../img/tlo.png");
     border-radius: 12px;
 }
 
@@ -58,28 +44,31 @@ a:link, a:visited, a:hover, a:active {
     color: #000000;
 }
 
-#menu {
+nav {
     width: 600px;
     display: block;
+    position: sticky;
     float: right;
+    top: 0;
+    z-index: 999;
     margin-left: 100px;
     font-size: 25px;
-    background-image: url("../img/tlo2.png");
+    background-image: url("../img/tlo.png");
     border-radius: 25px;
 }
 
-#menu ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-#menu li {
+nav li {
     float: left;
 }
 
-#menu li a {
+nav li a {
     display: inline-block;
     color: #000000;
     text-align: center;
@@ -89,12 +78,12 @@ a:link, a:visited, a:hover, a:active {
     position: relative;
 }
 
-#menu li a:hover::after {
+nav li a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
 }
 
-#menu li a::after {
+nav li a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -109,17 +98,14 @@ a:link, a:visited, a:hover, a:active {
 
 article {
     width: 80%;
-    margin: 15px 10% 15px 10%;
-    padding-top: 50px;
     display: block;
     position: relative;
-    float: left;
-    height: 800px;
+    height: 70vh;
 }
 
 #Start {
-    margin-top: 15px;
-    margin-bottom: 5px;
+    float: left;
+    margin: 3% 10%;
     color: #202020;
 }
 
@@ -131,16 +117,11 @@ article {
     float: left;
     position: relative;
     margin-right: 10px;
-    padding: 10px 0 10px 0;
+    padding: 10px 0;
     color: white;
     background: rgb(42,65,177);
     background: linear-gradient(90deg, rgba(42,65,177,1) 0%, rgba(204,26,26,1) 50%, rgba(246,140,65,1) 100%);
     border-radius: 50px;
-}
-
-.fa-face-smile-beam, .fa-handshake-simple {
-    font-size: 100px;
-    padding: 10px;
 }
 
 .fa-graduation-cap, .fa-computer, .fa-globe {
@@ -202,63 +183,34 @@ article {
 }
 
 .box {
-    align-self: flex-end;
     animation-duration: 2s;
     animation-iteration-count: 1;
     transform-origin: bottom;
 }
 
-.bounce {
-    animation-name: bounce;
-    animation-timing-function: ease;
-}
-
-@keyframes bounce {
-    0% {
-        transform: scale(1,1) translateY(0);
-        opacity:0;
-    }
-
-    10% {
-        transform: scale(1.1,.9) translateY(0);
-    }
-
-    30% {
-        transform: scale(.9,1.1) translateY(-10px);
-    }
-
-    50% {
-        transform: scale(1.05,.95) translateY(0);
-    }
-
-    57% {
-        transform: scale(1,1) translateY(-7px);
-    }
-
-    64% {
-        transform: scale(1,1) translateY(0);
-    }
-
-    100% {
-        transform: scale(1,1) translateY(0);
-        opacity: 1;
-    }
-}
-
 #My-skills {
     line-height: 1.5;
     font-size: 60px;
-    width: 70%;
-    float: right;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#My-skills h2{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
 }
 
 #MS-HTML {
     width: 230px;
-    padding: 10px 20px 10px 20px;
-    margin: 30px 10px 30px 10px;
+    padding: 10px 20px;
+    margin: 10px 0;
     color: #000000;
     font-family: 'Gotham Ultra', sans-serif;
-    display: block;
     border-radius: 50px;
     background: rgb(227,76,38);
     background: linear-gradient(90deg, rgba(227,76,38,1) 0%, rgba(240,101,41,1) 80%);
@@ -266,11 +218,10 @@ article {
 
 #MS-CSS {
     width: 180px;
-    padding: 10px 20px 10px 20px;
-    margin: 30px 10px 30px 10px;
+    padding: 10px 20px;
+    margin: 10px 0;
     color: #000000;
     font-family: 'Gotham Ultra', sans-serif;
-    display: block;
     border-radius: 50px;
     background: rgb(38,77,228);
     background: linear-gradient(90deg, rgba(38,77,228,1) 0%, rgba(41,101,241,1) 80%);
@@ -278,52 +229,74 @@ article {
 
 #MS-JS {
     width: 330px;
-    padding: 10px 20px 10px 20px;
-    margin: 30px 10px 30px 10px;
+    padding: 10px 20px;
+    margin: 10px 0;
     color: #323330;
     font-family: 'Gotham Ultra', sans-serif;
-    display: block;
     border-radius: 50px;
     background-color: #f0db4f;
 }
 
 #MS-GIT {
     width: 100px;
-    padding: 10px 20px 10px 20px;
-    margin: 30px 10px 30px 10px;
+    padding: 10px 20px;
+    margin: 10px 0;
     color: #ffffff;
     font-family: 'Gotham Ultra', sans-serif;
-    display: block;
     border-radius: 50px;
     background-color: #f34f29;
 }
 
-#MS-UNITY {
-    width: 200px;
-    padding: 10px 20px 10px 20px;
-    margin: 30px 10px 30px 10px;
-    color: #ffffff;
-    font-family: 'Gotham Ultra', sans-serif;
-    display: block;
-    border-radius: 50px;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(75,75,75,1) 33%, rgba(156,156,156,1) 66%);
+#Contact-me {
+    font-size: 60px;
+    margin: auto;
+    padding: 0;
 }
 
-#Contact-me {
-    line-height: 1.5;
-    font-size: 28px;
-    padding-left: 20px;
-    width: 38%;
-    float: left;
+#Contact-me h2{
+    font-size: 60px;
+    margin: 5rem 0rem 1rem 6rem;
+    text-align: center;
+}
+
+#Contact-me #container{
+    margin: auto;
+    padding: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contact-me a{
+    font-weight: bold;
+    margin: 1rem 5rem;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contact-me a i{
+    font-size: 7.5rem;
+}
+
+#CM-Link {
+    color: #cc1a1a;
+}
+
+#CM-Git {
+    color: #2a41b1;
+}
+
+#CM-Mail {
+    color: #f68c41;
 }
 
 #Resume {
     line-height: 1.5;
     font-size: 28px;
-    padding-right: 20px;
-    width: 38%;
-    float: right;
 }
 
 .reveal_from_right {
@@ -346,9 +319,13 @@ article {
 }
 
 footer {
-    display: flex;
-    bottom: 0px;
-    width: 85%;
-    padding-left: 15%;
-    background-image: url("../img/tlo2.png");
+    width: 100%;
+    text-align: right;
+    margin: 0;
+    padding-bottom: 1rem;
+    background-image: url("../img/tlo.png");
+}
+
+footer h3{
+    padding-right: 10rem;
 }
